@@ -1,0 +1,122 @@
+version: "3.1"
+
+nlu:
+# first
+- intent: first
+  examples: |
+    - 1st stop [arrived]{"entity": "content_type"}
+    - [arrived]{"entity": "content_type"}
+    - [arrived]{"entity": "content_type"} at customer
+    - [arrived]{"entity": "content_type"} in yard
+    - [arrived]{"entity": "content_type"} at customer in line at security
+    - [arrived]{"entity": "content_type"} airport yard
+    - [arrived]{"entity": "content_type"} east yard
+    - [arrived]{"entity": "content_type"} metro
+    - arrived at customer
+    - arrived in yard
+    - arrived kraft
+- intent: firstone
+  examples: |
+    - firstreplyone1
+- intent: firsttwo
+  examples: |
+    - firstreplytwo2
+- intent: firstthree
+  examples: |
+    - firstreplythree3
+
+# delivery
+- intent: delivery
+  examples: |
+    - drop completed
+    - dropped trailer
+    - delivery complete
+    - pick up complete
+    - gn thanks 
+    - got it
+    - done at
+    - reach at delivery location  
+    - waiting for dock
+    - delivery done
+    - okay paaji thanks 
+    - load pick up 
+    - waiting for dock
+    - pick up done
+    - pickup done leaving now 
+- intent: firstdeliveryone
+  examples: |
+    - firstdeliveryone1    
+- intent: firstdeliverytwo
+  examples: |
+    - firstdeliverytwo2
+
+
+# second
+- intent: second
+  examples: |
+    - leaving now
+    - hourly waiting for customer to finish offloading
+    - offloading
+    - still offloading
+    - trailer dropped
+    - drop trailer
+    - fueling in pickering ontario
+    - bol uploaded
+    - load D/L 
+- intent: secondone
+  examples: |
+    - secondone1
+- intent: secondtwo
+  examples: |
+    - secondtwo2
+- intent: secondthree
+  examples: |
+    - secondthree3
+
+# third
+- intent: third
+  examples: |
+    - in ikea
+    - in east drive yard
+    - drop trailer in yard
+    - drop loaded trailer at airport yard
+    - still waiting for loading
+    - back to dock unloading
+    - back to dock loading
+    - loading now
+    - waiting for load
+    - delay to assign dock
+- intent: thirdone
+  examples: |
+    - thirdone1
+- intent: thirdtwo
+  examples: |
+    - thirdtwo2
+- intent: thirdthree
+  examples: |
+    - thirdthree3
+
+
+# update_app
+- intent: appupdate
+  examples: |
+    - please update app
+    - update?
+    - app update
+    - updated?
+    - app
+- intent: updateone
+  examples: |
+    - updateone1
+- intent: updatetwo
+  examples: |
+    - updatetwo2
+- intent: updatethree
+  examples: |
+    - updatethree3
+- intent: updatefour
+  examples: |
+    - updatefour4
+- intent: updatefive
+  examples: |
+    - updatefive5

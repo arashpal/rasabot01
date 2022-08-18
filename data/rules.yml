@@ -1,0 +1,98 @@
+version: "3.1"
+
+rules:
+# first
+- rule: first_step
+  steps:
+  - intent: first
+  - action: utter_first
+- rule: firstone_step
+  steps:
+  - intent: firstone
+  - action: utter_firstone
+- rule: firsttwo_step
+  steps:
+  - intent: firsttwo
+  - action: utter_firsttwo
+- rule: firstthree_step
+  steps:
+  - intent: firstthree
+  - action: utter_firstthree
+
+# delivery
+- rule: delivery_step
+  steps:
+  - intent: delivery
+  - action: utter_delivery
+- rule: deliveryone_step
+  steps:
+  - intent: firstdeliveryone
+  - action: utter_firstdeliveryone
+- rule: deliverytwo_step
+  steps:
+  - intent: firstdeliveryone
+  - action: utter_firstdeliveryone
+
+# second
+- rule: Second_step
+  steps:  
+  - intent: second
+  - action: utter_second
+- rule: Secondone_step
+  steps:  
+  - intent: secondone
+  - action: utter_secondone
+- rule: Secondtwo_step
+  steps:  
+  - intent: secondtwo
+  - action: utter_secondtwo
+- rule: Secondthree_step
+  steps:  
+  - intent: secondthree
+  - action: utter_secondthree
+
+# third
+- rule: third_step
+  steps:
+  - intent: third
+  - action: utter_third
+- rule: thirdone_step
+  steps:
+  - intent: thirdone
+  - action: utter_thirdone
+- rule: thirdtwo_step
+  steps:
+  - intent: thirdtwo
+  - action: utter_thirdtwo
+- rule: thirdthree_step
+  steps:
+  - intent: thirdthree
+  - action: utter_thirdthree
+
+# appupdate
+- rule: appupdate_step
+  steps:
+  - intent: appupdate
+  - action: utter_appupdate
+- rule: updateone_step
+  steps:
+  - intent: updateone
+  - action: utter_updateone
+- rule: updatetwo_step
+  steps:
+  - intent: updatetwo
+  - action: utter_updatetwo
+- rule: updatethree_step
+  steps:
+  - intent: updatethree
+  - action: utter_updatethree
+- rule: updatefour_step
+  steps:
+  - intent: updatefour
+  - action: utter_updatefour
+- rule: updatefive_step
+  steps:
+  - intent: updatefive
+  - action: utter_updatefive
+
+

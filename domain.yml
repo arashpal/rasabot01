@@ -1,0 +1,138 @@
+version: "3.1"
+
+intents:
+# first
+  - first
+  - firstone
+  - firsttwo
+  - firstthree
+# second
+  - second
+  - secondone
+  - secondtwo
+  - secondthree    
+
+# third
+  - third
+  - thirdone
+  - thirdtwo
+  - thirdthree
+
+
+# delivery
+  - delivery
+  - firstdeliveryone
+  - firstdeliverytwo
+
+# appupdate
+  - appupdate
+  - updateone
+  - updatetwo
+  - updatethree
+  - updatefour
+  - updatefive
+
+
+entities:
+  - content_type
+
+# slots:
+#   content_type:
+#     type: text
+
+
+responses:
+# first
+  utter_first:
+  - text: ''
+    buttons:
+    - title:  "Okay"
+      payload:  '/firstone{{"entity": "content_type"}}'
+    - title:  "Okay, done"
+      payload:  '/firsttwo{{"entity": "content_type"}}'
+    - title:  "Okay, thanks"
+      payload:  '/firstthree{{"entity": "content_type"}}'    
+  utter_firstone:
+  - text: "Okay"
+  utter_firsttwo:
+  - text: "Okay, done."
+  utter_firstthree:
+  - text: "Okay, thanks."   
+
+# delivery
+  utter_delivery:
+  - text: ''
+    buttons:
+    - title:  "Noted"
+      payload:  '/firstdeliveryone'
+    - title:  "Ok"
+      payload:  '/firstdeliverytwo'
+  utter_firstdeliveryone:
+  - text: "Noted"
+  utter_firstdeliverytwo:
+  - text: "Ok"
+
+# second
+  utter_second:
+  - text: ""
+    buttons:
+    - title:  "done"
+      payload:  '/secondone'
+    - title:  "okay!"
+      payload:  '/secondtwo'
+    - title:  "noted, thanks"
+      payload:  '/secondthree'
+  utter_secondone:
+  - text: "done" 
+  utter_secondtwo:
+  - text: "okay!"
+  utter_secondthree:
+  - text: "noted, thanks"
+
+# third
+  utter_third:
+  - text: ""
+    buttons:
+    - title:  "Ok"
+      payload:  '/thirdone'
+    - title:  "okay, sure"
+      payload:  '/thirdtwo'
+    - title:  "noted, sure!"
+      payload:  '/thirdthree'
+  utter_thirdone:
+  - text: "OK" 
+  utter_thirdtwo:
+  - text: "okay, sure"
+  utter_thirdthree:
+  - text: "noted, sure!"
+
+# appupdate
+  utter_appupdate:
+  - text: ""
+    buttons:
+    - title:  "updated"
+      payload:  '/updateone'
+    - title:  "wait updating"
+      payload:  '/updatetwo'
+    - title:  "check in a minute"
+      payload:  '/updatethree'
+    - title:  "updating"
+      payload:  '/updatefour'
+    - title:  "update done"
+      payload:  '/updatefive'
+  utter_updateone:
+  - text: "updated" 
+  utter_updatetwo:
+  - text: "wait updating"
+  utter_updatethree:
+  - text: "check in a minute"
+  utter_updatefour:
+  - text: "updating"
+  utter_updatefive:
+  - text: "update done"
+  
+# actions:
+#   - action_service
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

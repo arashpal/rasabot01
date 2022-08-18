@@ -1,0 +1,63 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+# first
+  - intent: first
+  - action: utter_first
+  - intent: firstone
+  - action: utter_firstone
+  - intent: firsttwo
+  - action: utter_firsttwo
+  - intent: firstthree
+  - action: utter_firstthree
+  - intent: firstthree
+  - action: utter_firstthree
+  
+# delivery
+  - intent: delivery
+  - action: utter_delivery
+  - intent: firstdeliverytwo
+  - action: utter_firstdeliverytwo
+  - intent: firstdeliveryone
+  - action: utter_firstdeliveryone
+# second
+  - intent: second
+  - action: utter_second
+  - intent: secondone
+  - action: utter_secondone
+  - intent: secondtwo
+  - action: utter_secondtwo
+  - intent: secondthree
+  - action: utter_secondthree
+# third
+  - intent: third
+  - action: utter_third
+  - intent: thirdone
+  - action: utter_thirdone
+  - intent: thirdtwo
+  - action: utter_thirdtwo
+  - intent: thirdthree
+  - action: utter_thirdthree
+# appupdate
+  - intent: appupdate
+  - action: utter_appupdate
+  - intent: updateone
+  - action: utter_updateone
+  - intent: updatetwo
+  - action: utter_updatetwo
+  - intent: updatethree
+  - action: utter_updatethree
+  - intent: updatefour
+  - action: utter_updatefour
+  - intent: updatefive
+  - action: utter_updatefive
+
+# - story: first path
+#   steps:
+#   - intent:  first
+#     entities:
+#       - content_type: "blogs"
+#   - action: utter_blogs
